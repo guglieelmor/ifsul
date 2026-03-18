@@ -1,0 +1,31 @@
+/* Estilizando o corpo da página */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Seletor por classe */
+.titulo {
+    color: blue;
+    font-size: 40px;
+}
+
+/* Seletor por ID */
+#descricao {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Estilizando botão */
+.botao {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: darkgreen;
+}
