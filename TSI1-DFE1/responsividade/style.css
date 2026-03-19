@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Layout padrão (desktop) */
+.container {
+  display: flex;
+}
+
+aside {
+  width: 250px;
+  background: #e2e8f0;
+  padding: 20px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* 📱 Celular */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
