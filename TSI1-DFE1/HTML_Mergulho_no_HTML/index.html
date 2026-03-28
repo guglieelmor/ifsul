@@ -1,0 +1,122 @@
+<!DOCTYPE html> <!-- Define o tipo de documento HTML5 -->
+
+<html lang="pt-BR"> <!-- Idioma da página -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>Exemplo de HTML</title>
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- TÍTULOS (HEADINGS) -->
+    <!-- ========================= -->
+    <h1>Título Principal</h1>
+    <h2>Subtítulo</h2>
+    <h3>Subseção</h3>
+
+    <!-- ========================= -->
+    <!-- TEXTO -->
+    <!-- ========================= -->
+    <p>Este é um parágrafo simples.</p>
+
+    <p>
+        Aqui temos um <strong>texto em negrito</strong> e um
+        <span style="color:blue;">texto com span</span>.
+    </p>
+
+    <!-- ========================= -->
+    <!-- LISTAS -->
+    <!-- ========================= -->
+
+    <!-- Lista não ordenada -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <ol>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+    </ol>
+
+    <!-- ========================= -->
+    <!-- LINKS -->
+    <!-- ========================= -->
+    <a href="https://www.google.com" target="_blank">
+        Ir para o Google
+    </a>
+
+    <!-- ========================= -->
+    <!-- IMAGENS -->
+    <!-- ========================= -->
+    <img src="imagem.webp" alt="Descrição da imagem">
+
+    <!-- IMPORTANTE:
+        No HTML5 a tag <img> não precisa ser fechada.
+        No XHTML seria obrigatório assim:
+        <img src="imagem.jpg" alt="Descrição" />
+    -->
+
+    <!-- ========================= -->
+    <!-- FORMULÁRIOS -->
+    <!-- ========================= -->
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- ========================= -->
+    <!-- DIV E SEÇÕES -->
+    <!-- ========================= -->
+    <div>
+        <p>Essa é uma div genérica usada para agrupar conteúdo.</p>
+    </div>
+
+    <section>
+        <h2>Seção Semântica</h2>
+        <p>Usamos section para organizar o conteúdo da página.</p>
+    </section>
+
+    <!-- ========================= -->
+    <!-- DIFERENÇAS HTML vs XHTML -->
+    <!-- ========================= -->
+
+    <!-- HTML5 (mais flexível) -->
+    <p>HTML permite tags não fechadas em alguns casos.</p>
+    <br>
+
+    <!-- XHTML (mais rígido) -->
+    <!--
+        - Todas as tags devem ser fechadas
+        - Letras minúsculas obrigatórias
+        - Estrutura deve ser bem formada
+
+        Exemplo XHTML correto:
+    -->
+    <!--
+    <p>Texto em XHTML</p>
+    <br />
+    <img src="img.jpg" alt="Imagem" />
+    -->
+
+    <!-- ========================= -->
+    <!-- COMENTÁRIOS -->
+    <!-- ========================= -->
+    <!-- Isso é um comentário em HTML -->
+
+</body>
+
+</html>

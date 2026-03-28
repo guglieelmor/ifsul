@@ -1,0 +1,17 @@
+/* Seletor por ELEMENTO */
+p {
+    color: green;
+    font-size: 18px;
+}
+
+/* Seletor por CLASSE (usa .) */
+.destaque {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Seletor por ID (usa #) */
+#titulo-principal {
+    color: red;
+    text-align: center;
+}

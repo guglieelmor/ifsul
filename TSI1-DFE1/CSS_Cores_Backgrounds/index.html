@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Backgrounds e Hero</title>
+
+    <!-- ========================= -->
+    <!-- IMPORTANDO FONTE EXTERNA -->
+    <!-- ========================= -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* ========================= */
+        /* CONFIG GERAL */
+        /* ========================= */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ========================= */
+        /* CORES DE BACKGROUND */
+        /* ========================= */
+        .cor-hex {
+            background-color: #3498db; /* HEX */
+            color: white;
+            padding: 20px;
+        }
+
+        .cor-rgb {
+            background-color: rgb(46, 204, 113); /* RGB */
+            color: white;
+            padding: 20px;
+        }
+
+        .cor-hsl {
+            background-color: hsl(280, 60%, 50%); /* HSL */
+            color: white;
+            padding: 20px;
+        }
+
+        /* ========================= */
+        /* BACKGROUND COM IMAGEM */
+        /* ========================= */
+        .bg-imagem {
+            background-image: url('https://picsum.photos/800/400');
+            height: 200px;
+
+            /* repetição */
+            background-repeat: no-repeat;
+
+            /* tamanho */
+            background-size: cover; /* cobre toda área */
+
+            /* posição */
+            background-position: center;
+        }
+
+        .bg-contain {
+            background-image: url('https://picsum.photos/300/200');
+            height: 200px;
+
+            background-repeat: no-repeat;
+            background-size: contain; /* mostra imagem inteira */
+            background-position: center;
+            background-color: #eee;
+        }
+
+        /* ========================= */
+        /* BACKGROUND FIXO */
+        /* ========================= */
+        .bg-fixo {
+            background-image: url('https://picsum.photos/1200/800');
+            height: 300px;
+
+            background-attachment: fixed; /* efeito parallax */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* ========================= */
+        /* TEXTO E FONTES */
+        /* ========================= */
+        .texto {
+            padding: 20px;
+        }
+
+        .titulo {
+            font-size: 32px;      /* tamanho */
+            font-weight: 700;     /* peso (negrito) */
+            text-align: center;   /* alinhamento */
+        }
+
+        .paragrafo {
+            font-size: 18px;
+            font-weight: 300;
+            font-style: italic;   /* estilo */
+            text-align: justify;
+        }
+
+        /* ========================= */
+        /* HERO (BANNER) */
+        /* ========================= */
+        .hero {
+            position: relative;
+            height: 400px;
+
+            background-image: url('https://picsum.photos/1200/600');
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* sobreposição escura */
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        /* conteúdo do hero */
+        .hero-conteudo {
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- CORES -->
+    <!-- ========================= -->
+    <div class="cor-hex">Cor HEX (#3498db)</div>
+    <div class="cor-rgb">Cor RGB (46, 204, 113)</div>
+    <div class="cor-hsl">Cor HSL (280, 60%, 50%)</div>
+
+    <!-- ========================= -->
+    <!-- BACKGROUND IMAGEM -->
+    <!-- ========================= -->
+    <div class="bg-imagem"></div>
+
+    <div class="bg-contain"></div>
+
+    <div class="bg-fixo"></div>
+
+    <!-- ========================= -->
+    <!-- TEXTO -->
+    <!-- ========================= -->
+    <div class="texto">
+        <h2 class="titulo">Exemplo de Texto</h2>
+        <p class="paragrafo">
+            Esse texto demonstra propriedades como tamanho, peso, estilo e alinhamento.
+        </p>
+    </div>
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
+    <section class="hero">
+
+        <!-- camada escura -->
+        <div class="overlay"></div>
+
+        <!-- conteúdo -->
+        <div class="hero-conteudo">
+            <h1>Bem-vindo</h1>
+            <p>Esse é um exemplo de Hero com sobreposição</p>
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo CSS</title>
+
+    <!-- ========================= -->
+    <!-- CSS INTERNO -->
+    <!-- ========================= -->
+    <style>
+        /* Seletor por ELEMENTO */
+        p {
+            color: green;
+            font-size: 18px;
+        }
+
+        /* Seletor por CLASSE (usa .) */
+        .destaque {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* Seletor por ID (usa #) */
+        #titulo-principal {
+            color: red;
+            text-align: center;
+        }
+    </style>
+
+    <!-- ========================= -->
+    <!-- CSS EXTERNO -->
+    <!-- ========================= -->
+    <!--
+        Aqui estamos vinculando um arquivo externo CSS.
+        Exemplo de arquivo: estilos.css
+    -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- EXEMPLO COM ID -->
+    <!-- ========================= -->
+    <h1 id="titulo-principal">
+        Título com ID (vermelho e centralizado)
+    </h1>
+
+    <!-- ========================= -->
+    <!-- EXEMPLO COM ELEMENTO -->
+    <!-- ========================= -->
+    <p>
+        Esse parágrafo foi estilizado usando seletor de elemento (p).
+    </p>
+
+    <!-- ========================= -->
+    <!-- EXEMPLO COM CLASSE -->
+    <!-- ========================= -->
+    <p class="destaque">
+        Esse parágrafo usa uma classe chamada "destaque".
+    </p>
+
+    <!-- ========================= -->
+    <!-- CSS INLINE -->
+    <!-- ========================= -->
+    <p style="color: purple; font-size: 20px;">
+        Esse texto usa CSS INLINE (direto na tag).
+    </p>
+
+    <!-- ========================= -->
+    <!-- EXPLICAÇÕES IMPORTANTES -->
+    <!-- ========================= -->
+
+    <!--
+        MÉTODOS DE VINCULAÇÃO:
+
+        1. INLINE:
+            - Dentro da própria tag (style="")
+            - Ex: <p style="color:red;">
+
+        2. INTERNO:
+            - Dentro da tag <style> no <head>
+            - Usado para estilos da própria página
+
+        3. EXTERNO:
+            - Arquivo separado (.css)
+            - Melhor prática para projetos grandes
+
+
+        SELETORES:
+
+        - Elemento: p, h1, div
+        - Classe: .nomeClasse (pode repetir várias vezes)
+        - ID: #nomeID (único na página)
+
+
+        PRIORIDADE (IMPORTANTE):
+
+        INLINE > ID > CLASSE > ELEMENTO
+    -->
+
+</body>
+</html>

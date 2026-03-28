@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Links e Iframe</title>
+</head>
+
+<body>
+
+    <h1>Exemplo de Links e Iframe</h1>
+
+    <!-- ========================= -->
+    <!-- LINKS EXTERNOS -->
+    <!-- ========================= -->
+
+    <!-- Link para outro site -->
+    <p>
+        <a href="https://www.google.com" target="_blank">
+            Acessar o Google (link externo)
+        </a>
+    </p>
+
+    <!-- EXPLICAÇÃO:
+        target="_blank" abre o link em uma nova aba
+    -->
+
+
+    <!-- ========================= -->
+    <!-- LINKS INTERNOS -->
+    <!-- ========================= -->
+
+    <!-- Link para outra página do próprio site -->
+    <p>
+        <a href="pagina2.html">
+            Ir para outra página do site (link interno)
+        </a>
+    </p>
+
+    <!-- Link interno na mesma página (âncora) -->
+    <p>
+        <a href="#secao">
+            Ir para a seção abaixo
+        </a>
+    </p>
+
+
+    <!-- ========================= -->
+    <!-- ESPAÇO PARA SCROLL -->
+    <!-- ========================= -->
+    <p style="margin-top: 500px;">
+        (Espaço só para rolar a página)
+    </p>
+
+
+    <!-- Seção alvo do link interno -->
+    <h2 id="secao">Seção Destino</h2>
+    <p>Você chegou aqui através de um link interno com âncora.</p>
+
+
+    <!-- ========================= -->
+    <!-- IFRAME -->
+    <!-- ========================= -->
+
+    <h2>Exemplo de Iframe</h2>
+
+    <!-- Incorporando outro site -->
+    <iframe src="https://www.example.com" width="600" height="300">
+    </iframe>
+
+    <!-- EXPLICAÇÃO:
+        iframe serve para "embutir" outro site dentro da página
+    -->
+
+
+    <!-- ========================= -->
+    <!-- IFRAME COM LINK CONTROLADO -->
+    <!-- ========================= -->
+
+    <h2>Iframe controlado por links</h2>
+
+    <!-- Links que carregam dentro do iframe -->
+    <a href="https://www.wikipedia.org" target="meuIframe">Abrir Wikipedia</a><br>
+    <a href="https://www.uol.com.br" target="meuIframe">Abrir UOL</a><br>
+
+    <!-- Iframe com nome -->
+    <iframe name="meuIframe" width="600" height="300">
+    </iframe>
+
+    <!-- EXPLICAÇÃO:
+        target="meuIframe" faz o link abrir DENTRO do iframe
+        ao invés de abrir outra página
+    -->
+
+
+    <!-- ========================= -->
+    <!-- OBSERVAÇÕES IMPORTANTES -->
+    <!-- ========================= -->
+
+    <!--
+        - Nem todos os sites permitem ser exibidos em iframe (por segurança)
+        - Isso é controlado por headers como X-Frame-Options
+        - Ex: Google bloqueia iframe
+    -->
+
+</body>
+
+</html>
