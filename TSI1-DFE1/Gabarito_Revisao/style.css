@@ -1,0 +1,120 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background: #111827;
+      color: white;
+      position: fixed;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
+
+    /* CONTEÚDO */
+    .content {
+      margin-left: 250px;
+      padding: 30px;
+      background: #f3f4f6;
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h1,
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    /* HABILIDADES */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .skill {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+    }
+
+    /* FORM */
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #3b82f6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2563eb;
+    }
+
+    /* MOBILE */
+    .topbar {
+      display: none;
+      width: 100%;
+      background: #111827;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        display: none;
+      }
+
+      .topbar {
+        display: block;
+      }
+
+      .content {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
+    }

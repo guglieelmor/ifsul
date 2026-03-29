@@ -2,189 +2,220 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Backgrounds e Hero</title>
-
-    <!-- ========================= -->
-    <!-- IMPORTANDO FONTE EXTERNA -->
-    <!-- ========================= -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
 
     <style>
-
-        /* ========================= */
-        /* CONFIG GERAL */
-        /* ========================= */
-        body {
+        * {
             margin: 0;
-            font-family: 'Poppins', sans-serif;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
-        /* ========================= */
-        /* CORES DE BACKGROUND */
-        /* ========================= */
-        .cor-hex {
-            background-color: #3498db; /* HEX */
+        /* HEADER */
+        header {
+            height: 80px;
+            background: #0f172a;
             color: white;
-            padding: 20px;
-        }
-
-        .cor-rgb {
-            background-color: rgb(46, 204, 113); /* RGB */
-            color: white;
-            padding: 20px;
-        }
-
-        .cor-hsl {
-            background-color: hsl(280, 60%, 50%); /* HSL */
-            color: white;
-            padding: 20px;
-        }
-
-        /* ========================= */
-        /* BACKGROUND COM IMAGEM */
-        /* ========================= */
-        .bg-imagem {
-            background-image: url('https://picsum.photos/800/400');
-            height: 200px;
-
-            /* repetição */
-            background-repeat: no-repeat;
-
-            /* tamanho */
-            background-size: cover; /* cobre toda área */
-
-            /* posição */
-            background-position: center;
-        }
-
-        .bg-contain {
-            background-image: url('https://picsum.photos/300/200');
-            height: 200px;
-
-            background-repeat: no-repeat;
-            background-size: contain; /* mostra imagem inteira */
-            background-position: center;
-            background-color: #eee;
-        }
-
-        /* ========================= */
-        /* BACKGROUND FIXO */
-        /* ========================= */
-        .bg-fixo {
-            background-image: url('https://picsum.photos/1200/800');
-            height: 300px;
-
-            background-attachment: fixed; /* efeito parallax */
-            background-size: cover;
-            background-position: center;
-        }
-
-        /* ========================= */
-        /* TEXTO E FONTES */
-        /* ========================= */
-        .texto {
-            padding: 20px;
-        }
-
-        .titulo {
-            font-size: 32px;      /* tamanho */
-            font-weight: 700;     /* peso (negrito) */
-            text-align: center;   /* alinhamento */
-        }
-
-        .paragrafo {
-            font-size: 18px;
-            font-weight: 300;
-            font-style: italic;   /* estilo */
-            text-align: justify;
-        }
-
-        /* ========================= */
-        /* HERO (BANNER) */
-        /* ========================= */
-        .hero {
-            position: relative;
-            height: 400px;
-
-            background-image: url('https://picsum.photos/1200/600');
-            background-size: cover;
-            background-position: center;
-
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            padding: 0 40px;
         }
 
-        /* sobreposição escura */
-        .overlay {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
         }
 
-        /* conteúdo do hero */
-        .hero-conteudo {
-            position: relative;
+        nav a {
             color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: #1e293b;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
 
         .hero h1 {
             font-size: 48px;
-            margin: 0;
         }
 
         .hero p {
-            font-size: 20px;
+            font-size: 18px;
+            color: #cbd5f5;
+            margin-top: 10px;
         }
 
+        .btn {
+            background: #3b82f6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        /* SERVIÇOS */
+        .services {
+            background: #f1f5f9;
+            padding: 60px 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 300px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #64748b;
+            margin-top: 10px;
+        }
+
+        /* CONTATO */
+        .contact {
+            background: #e2e8f0;
+            padding: 50px;
+        }
+
+        .contact h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            height: 60px;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                height: auto;
+                padding: 20px;
+            }
+
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
-
 <body>
 
-    <!-- ========================= -->
-    <!-- CORES -->
-    <!-- ========================= -->
-    <div class="cor-hex">Cor HEX (#3498db)</div>
-    <div class="cor-rgb">Cor RGB (46, 204, 113)</div>
-    <div class="cor-hsl">Cor HSL (280, 60%, 50%)</div>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">MinhaEmpresa</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
 
-    <!-- ========================= -->
-    <!-- BACKGROUND IMAGEM -->
-    <!-- ========================= -->
-    <div class="bg-imagem"></div>
-
-    <div class="bg-contain"></div>
-
-    <div class="bg-fixo"></div>
-
-    <!-- ========================= -->
-    <!-- TEXTO -->
-    <!-- ========================= -->
-    <div class="texto">
-        <h2 class="titulo">Exemplo de Texto</h2>
-        <p class="paragrafo">
-            Esse texto demonstra propriedades como tamanho, peso, estilo e alinhamento.
-        </p>
-    </div>
-
-    <!-- ========================= -->
     <!-- HERO -->
-    <!-- ========================= -->
     <section class="hero">
+        <h1>Sua solução digital</h1>
+        <p>Crie experiências incríveis para seus clientes</p>
+        <a href="#" class="btn">Começar agora</a>
+    </section>
 
-        <!-- camada escura -->
-        <div class="overlay"></div>
-
-        <!-- conteúdo -->
-        <div class="hero-conteudo">
-            <h1>Bem-vindo</h1>
-            <p>Esse é um exemplo de Hero com sobreposição</p>
+    <!-- SERVIÇOS -->
+    <section class="services">
+        <div class="card">
+            <h3>Desenvolvimento</h3>
+            <p>Criamos sistemas modernos e eficientes.</p>
         </div>
 
+        <div class="card">
+            <h3>Design</h3>
+            <p>Interfaces bonitas e fáceis de usar.</p>
+        </div>
+
+        <div class="card">
+            <h3>Marketing</h3>
+            <p>Estratégias para aumentar suas vendas.</p>
+        </div>
     </section>
+
+    <!-- CONTATO -->
+    <section class="contact">
+        <h2>Entre em contato</h2>
+        <input type="text" placeholder="Seu nome">
+        <input type="email" placeholder="Seu email">
+        <textarea rows="5" placeholder="Sua mensagem"></textarea>
+        <a href="#" class="btn">Enviar</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 - Todos os direitos reservados
+    </footer>
 
 </body>
 </html>
