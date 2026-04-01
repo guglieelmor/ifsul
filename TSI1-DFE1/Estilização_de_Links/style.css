@@ -1,0 +1,66 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* MENU */
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px;
+  margin: 0;
+  background-color: #222;
+}
+
+/* LINKS DO MENU */
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* HOVER */
+.menu a:hover {
+  background-color: #00aaff;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+/* ACTIVE */
+.menu a:active {
+  background-color: #ff4444;
+}
+
+/* VISITED */
+.menu a:visited {
+  color: #ccc;
+}
+
+/* FOCUS */
+.menu a:focus {
+  outline: 2px solid yellow;
+}
+
+/* LINK NO TEXTO */
+main a {
+  color: blue;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+main a:hover {
+  color: white;
+  background-color: black;
+  padding: 3px 5px;
+}
+
+/* CONTEÚDO */
+main {
+  text-align: center;
+  margin-top: 40px;
+}
