@@ -1,0 +1,76 @@
+body {
+    font-family: Arial;
+    height: 2000px;
+    /* pra poder rolar a página */
+}
+
+/* padrão visual */
+.box {
+    padding: 20px;
+    color: white;
+    margin: 10px;
+}
+
+/* ============================= */
+/* 1. STATIC (padrão) */
+
+.static {
+    position: static;
+    /* padrão do navegador */
+    background: gray;
+}
+
+/* ============================= */
+/* 2. RELATIVE */
+
+.relative {
+    position: relative;
+    top: 20px;
+    /* move em relação à posição original */
+    left: 20px;
+
+    background: blue;
+}
+
+/* ============================= */
+/* 3. ABSOLUTE */
+
+.container {
+    position: relative;
+    /* referência pro absolute */
+    height: 200px;
+    border: 2px solid black;
+}
+
+.absolute {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    background: red;
+}
+
+/* ============================= */
+/* 4. FIXED */
+
+.fixed {
+    position: fixed;
+
+    bottom: 10px;
+    right: 10px;
+
+    background: green;
+}
+
+/* ============================= */
+/* 5. STICKY */
+
+.sticky {
+    position: sticky;
+
+    top: 0;
+    /* gruda no topo ao rolar */
+
+    background: purple;
+}
