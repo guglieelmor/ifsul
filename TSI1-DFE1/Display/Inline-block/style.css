@@ -1,0 +1,10 @@
+.box {
+    display: inline-block;
+    /* Fica na mesma linha, mas aceita tamanho */
+    width: 120px;
+    height: 80px;
+    background: gold;
+    border: 2px solid orange;
+    margin: 10px;
+    padding: 10px;
+}

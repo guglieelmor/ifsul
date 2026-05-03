@@ -1,0 +1,7 @@
+.box {
+    display: block; /* Faz o elemento ocupar 100% da largura disponível */
+    background: lightblue;
+    border: 2px solid blue;
+    margin: 10px;
+    padding: 10px;
+}

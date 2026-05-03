@@ -1,0 +1,70 @@
+body {
+    font-family: Arial;
+}
+
+/* CONTAINER FLEX */
+.container {
+    display: flex;
+
+    /* DIREÇÃO */
+    flex-direction: row;
+    /* row | row-reverse | column | column-reverse */
+
+    /* QUEBRA DE LINHA */
+    flex-wrap: wrap;
+    /* nowrap | wrap | wrap-reverse */
+
+    /* ATALHO (direction + wrap) */
+    /* flex-flow: row wrap; */
+
+    /* ALINHAMENTO NO EIXO PRINCIPAL */
+    justify-content: space-around;
+    /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+
+    /* ALINHAMENTO NO EIXO CRUZADO */
+    align-items: center;
+    /* stretch | flex-start | flex-end | center | baseline */
+
+    /* ALINHAMENTO DE LINHAS (quando tem wrap) */
+    align-content: center;
+    /* flex-start | flex-end | center | space-between | space-around | stretch */
+
+    gap: 10px;
+    /* espaço entre os itens */
+
+    height: 300px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+/* ITENS */
+.box {
+    background: purple;
+    color: white;
+    padding: 10px;
+
+    /* TAMANHO BASE */
+    flex-basis: 100px;
+
+    /* CRESCER */
+    flex-grow: 1;
+
+    /* ENCOLHER */
+    flex-shrink: 1;
+
+    /* ATALHO */
+    /* flex: 1 1 100px; */
+
+    text-align: center;
+}
+
+/* ITEM ESPECÍFICO */
+.diferente {
+    background: red;
+
+    order: -1;
+    /* muda a ordem (menor vem primeiro) */
+
+    align-self: flex-end;
+    /* sobrescreve align-items */
+}

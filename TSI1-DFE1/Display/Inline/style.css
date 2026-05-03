@@ -1,0 +1,10 @@
+.box {
+    display: inline; /* Elemento fica na mesma linha */
+    background: lightgreen;
+    border: 2px solid green;
+    padding: 10px;
+
+    /* width e height NÃO funcionam corretamente em inline */
+    width: 200px;
+    height: 100px;
+}
