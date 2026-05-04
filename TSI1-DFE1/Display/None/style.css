@@ -1,0 +1,11 @@
+.escondido {
+    display: none;
+    /* Remove completamente o elemento da tela */
+}
+
+.box {
+    background: lightcoral;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+}
