@@ -61,37 +61,4 @@ footer {
   text-align: center;
   padding: 15px;
 }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* LAYOUT PRINCIPAL */
-.layout {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-main {
-  flex: 3;
-}
-
-aside {
-  flex: 1;
-  min-width: 250px;
-}
-
-/* PRODUTOS */
-.produtos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.card {
-  flex: 1 1 150px;
-}
+ 
