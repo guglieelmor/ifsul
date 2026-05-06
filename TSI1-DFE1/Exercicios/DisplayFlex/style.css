@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  margin-top: 300px;
+}
+
+.container {
+  border: 2px solid black;
+  height: 200px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background: steelblue;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  margin: 5px;
+}
+
+.diferente {
+  background: crimson;
+}
