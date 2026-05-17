@@ -1,118 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilo Base (Mobile First) */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 10px;
 }
 
-/* TOPO */
-
-.topo {
-    background: #111;
-    color: white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 40px;
-}
-
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-}
-
-/* BANNER */
-
-.banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 50px;
-    gap: 40px;
-}
-
-.texto {
-    flex: 1;
-}
-
-.texto h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.texto p {
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-button {
-    padding: 12px 20px;
-    border: none;
-    background: black;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.banner img {
-    width: 500px;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* CARDS */
-
-.cards {
-    display: flex;
-    gap: 20px;
-
-    padding: 40px;
-}
-
-.card {
-    flex: 1;
-    background: #ececec;
-    padding: 60px 20px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-/* RESPONSIVIDADE */
-
-@media(max-width: 768px) {
-
-    .topo {
-        flex-direction: column;
-        gap: 20px;
+/* Regra para Telas Maiores (Desktop) */
+/* min-width = "A partir de..." */
+@media (min-width: 768px) {
+    body {
+        /* Aumenta a fonte e o respiro */
+        font-size: 24px;
+        padding: 40px;
     }
-
-    .menu {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .banner {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .texto h2 {
-        font-size: 28px;
-    }
-
-    .cards {
-        flex-direction: column;
-    }
-
-}   
+}

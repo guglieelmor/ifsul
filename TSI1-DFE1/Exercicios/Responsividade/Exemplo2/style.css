@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+.menu{
+    background: #222;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 768px){
+
+    /* COMPLETE AQUI */
+
+}

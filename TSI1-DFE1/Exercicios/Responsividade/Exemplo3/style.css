@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+/* MENU */
+
+.menu{
+    background: #111;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+}
+
+/* CARDS */
+
+.cards{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    padding: 40px;
+}
+
+.card{
+    background: lightgray;
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* TABLET */
+
+@media(max-width: 1024px){
+
+    /* COMPLETE AQUI */
+
+}
+
+/* CELULAR */
+
+@media(max-width: 768px){
+
+    /* COMPLETE AQUI */
+
+}

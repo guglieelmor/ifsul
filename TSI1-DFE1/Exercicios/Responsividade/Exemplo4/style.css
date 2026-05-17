@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+/* MENU */
+
+.menu {
+    background: #111;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 40px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    padding: 40px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.banner img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+/* GRID */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    padding: 40px;
+}
+
+.card {
+    background: lightgray;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* TABLET */
+
+@media(max-width: 1024px) {
+
+    /* COMPLETE AQUI */
+
+}
+
+/* CELULAR */
+
+@media(max-width: 768px) {
+
+    /* COMPLETE AQUI */
+
+}
