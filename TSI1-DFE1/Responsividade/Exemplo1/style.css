@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.card {
+    flex: 1;
+    background: #e5e5e5;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media(max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+}
