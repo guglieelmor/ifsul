@@ -20,7 +20,7 @@ Link do slide: o que o usuário enviar junto com o pedido.
    - Outros links (PDF, página web): use WebFetch.
    - Se não conseguir acessar, avise e peça ao usuário um link público ou o arquivo.
 
-5. **Crie o enunciado** dentro do diretório da semana, num arquivo nomeado a partir do título: `exercicio_<titulo>.md` (título em minúsculas, sem acentos, palavras separadas por `_`; ex.: "Sistema da Cantina" → `exercicio_sistema_da_cantina.md`). Escreva em português, contendo:
+5. **Crie o enunciado** dentro do diretório da semana, num arquivo nomeado a partir do título: `exercicio_<titulo>.md` (título em minúsculas, sem acentos, palavras separadas por `_`; ex.: "Sistema da Cantina" → `exercicio_sistema_da_cantina.md`). O enunciado fica só em `.md` (não crie `.txt` nem `.html`). Escreva em português, contendo:
    - Título no formato `# Exercício - <título do exercício>` (ex.: `# Exercício - Sistema da Cantina`), seguido do tema da aula (conforme o slide)
    - Objetivos de aprendizagem (conceitos do slide que o exercício pratica)
    - Contexto/cenário do problema
@@ -39,12 +39,19 @@ Link do slide: o que o usuário enviar junto com o pedido.
    - Exemplo: `javac.exe -encoding UTF-8 -d 'C:\Users\Guilherme Oliveira\AppData\Local\Temp\gab' *.java` e `java.exe -Dstdout.encoding=UTF-8 -cp 'C:\Users\Guilherme Oliveira\AppData\Local\Temp\gab' Main`; apague a pasta temporária no final.
    - Use a saída real da execução como "saída esperada" no arquivo do enunciado.
 
-8. Ao final, liste os arquivos criados e resuma o exercício em 2–3 linhas.
+8. **Crie o `Gabarito.zip`** no mesmo diretório onde está a pasta `Gabarito/` (o diretório da semana), contendo a pasta `Gabarito/` com os `.java`:
+   - Faça isso só depois de validar o gabarito, para o zip ter a versão final.
+   - O `zip` não está instalado no WSL; use o Python, a partir do diretório da semana: `python3 -m zipfile -c Gabarito.zip Gabarito/`
+   - Confira o conteúdo com `python3 -m zipfile -l Gabarito.zip` (sem arquivos `.class`).
+   - Se o gabarito for alterado depois, recrie o `Gabarito.zip`.
+
+9. Ao final, liste os arquivos criados e resuma o exercício em 2–3 linhas.
 
 Estrutura final esperada:
 ```
 INF2-POO/Semestre/<semestre>/Semana/<semana>/
 ├── exercicio_<titulo>.md
+├── Gabarito.zip
 └── Gabarito/
     ├── <Classe>.java
     └── Main.java
