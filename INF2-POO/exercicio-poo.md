@@ -33,7 +33,7 @@ Link do slide: o que o usuário enviar junto com o pedido.
 6. **Crie o diretório `Gabarito/`** no mesmo caminho e coloque nele a solução em `.java`:
    - Um arquivo por classe pública (nome do arquivo = nome da classe), mais uma classe `Main` com o método `main` demonstrando o uso.
    - Código limpo, com comentários didáticos curtos em português, nomes em português coerentes com o enunciado.
-   - Sem `package` (para compilar direto com `javac *.java`).
+   - Sem `package` (para compilar direto com `javac *.java`), exceto quando o slide ensina pacotes: aí use a estrutura de pastas do slide dentro de `Gabarito/src/` (ex.: `src/br/edu/ifsul/<projeto>/modelo/`) e compile os pacotes juntos a partir de `src`.
 
 7. **Valide o gabarito**: compile e execute numa pasta temporária fora do repositório e corrija erros. Não deixe arquivos `.class` no repositório.
    - O `javac` não está no Linux (WSL); use o JDK do Windows: `/mnt/c/Program Files/Java/jdk-24/bin/javac.exe` e `java.exe`.
