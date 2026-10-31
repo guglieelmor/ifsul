@@ -28,6 +28,7 @@ Link do slide: o que o usuário enviar junto com o pedido.
    - Exemplo de execução esperada (entrada/saída)
    - Desafio extra opcional
    O exercício deve cobrar exatamente os conceitos apresentados no slide, sem exigir conteúdo de aulas futuras.
+   **Sem código pronto no enunciado:** o aluno deve fazer tudo. Descreva os requisitos como regras do negócio, em português (o que o programa deve fazer), e não como código: nada de declarações de classes/interfaces, cabeçalhos com `extends`/`implements`, assinaturas de métodos, tabelas de atributos com tipos ou trechos da solução. Pode sugerir os nomes das classes e mostrar a saída esperada. Nenhum trecho de código Java no enunciado, nem como material de análise (nada de "encontre os erros" com código ou de exemplos de sintaxe). As decisões de modelagem (o que é classe, interface, atributo, método) ficam para o aluno.
 
 6. **Crie o diretório `Gabarito/`** no mesmo caminho e coloque nele a solução em `.java`:
    - Um arquivo por classe pública (nome do arquivo = nome da classe), mais uma classe `Main` com o método `main` demonstrando o uso.
